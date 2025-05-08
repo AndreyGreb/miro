@@ -5,9 +5,11 @@ import { Providers } from "./providers";
 
 export const router = createBrowserRouter([
   {
-    element: <Providers>
-                <App />
-             </Providers>,
+    element: (
+      <Providers>
+        <App />
+      </Providers>
+    ),
     children: [
       {
         path: ROUTES.BOARDS,
